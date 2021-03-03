@@ -4,7 +4,7 @@
 // import {} from '파일 상대 경로';
 // axios 로딩
 import axios, { AxiosResponse } from 'axios';
-import * as Chart from 'chart.js';
+import Chart from 'chart.js';
 // 타입 import
 import {
   CountrySummaryResponse,
