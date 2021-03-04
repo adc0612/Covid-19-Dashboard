@@ -7,9 +7,17 @@
         // 컴파일에 포함될 라이브러리 파일 목록
         "lib": ["ES2015", "DOM", "DOM.Iterable"], // ES5에서 Promise문법을 이해 못 하기 때문
         "noImplicitAny": true,
-        // 타입 선언을 직접 선언할 때 파일을 넣을 폴더 설정
         "esModuleInterop": true,
-        "typeRoots": ["./node_modules/@types", "./types"]
+        // 타입 선언을 직접 선언할 때 파일을 넣을 폴더 설정
+        "typeRoots": ["./node_modules/@types", "./types"],
+        "strict": true, /* 모든 엄격한 타입-체킹 옵션 활성화 여부 */
+        // "noImplicitAny": true, /* 'any' 타입으로 구현된 표현식 혹은 정의 에러처리 여부 */
+        // "strictNullChecks": true, /* 엄격한 null 확인 여부 */
+        // "strictFunctionTypes": true, /* 함수 타입에 대한 엄격한 확인 여부 */
+        // "strictBindCallApply": true, /* 함수에 엄격한 'bind', 'call' 그리고 'apply' 메소드 사용 여부 */
+        // "strictPropertyInitialization": true, /* 클래스의 값 초기화에 엄격한 확인 여부 */
+        // "noImplicitThis": true, /* 'any' 타입으로 구현된 'this' 표현식 에러처리 여부 */
+        // "alwaysStrict": true, /* strict mode로 분석하고 모든 소스 파일에 "use strict"를 추가할 지 여부 */
     },
     // 해당 프로젝트 폴더 기준으로 어디에 있는 TS파일을 compile시킬지 결정
     "include": ["./src/**/*"], // src폴더 밑에 있는 모든 파일들로 설정
